@@ -1,0 +1,30 @@
+﻿@using MVCQuest.Models.Entities
+@model Article
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Edit Article</h2>
+
+    <form asp-action="Edit" method="post">
+        <div>
+            <label asp-for="Id"></label>
+            <input asp-for="Id" readonly />
+        </div>
+        <div>
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+        </div>
+        <div>
+            <label asp-for="Text"></label>
+            <textarea asp-for="Text"></textarea>
+        </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</body>
+</html>
